@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Developers Application</title>
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+	<meta name="viewport" content="width-device-width">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<!-- header -->
+<div class="container-fluid top_bar" >
+<div class="container" >
+<div class="row" >
+<!-- note in bootstrap one row consist on 12 colums  -->
+<div class="col-sm-3" >
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="facebook" class="social-icons"><i class="fa fa-facebook" style="font-size: 17px; color: #fff"> </i> </a><!-- adding icon -->
+
+<a href="#"	data-toggle="tooltip" data-placement="bottom" title="twitter" class="social-icons"><i class="fa fa-twitter" style="font-size: 17px; color: #fff"> </i> </a><!-- adding icon -->
+
+<a href="#"	data-toggle="tooltip" data-placement="bottom" title="youtube" class="social-icons"><i class="fa fa-youtube-play" style="font-size: 17px; color: #fff"> </i> </a><!-- adding icon -->
+
+<a href="#"	data-toggle="tooltip" data-placement="bottom" title="google-plus" class="social-icons"><i class="fa fa-google-plus" style="font-size: 17px; color: #fff"> </i> </a><!-- adding icon -->
+
+</div> <!-- end of col-3 -->
+
+<div class="col-sm-9 text-right contact_info " >
+<span class="glyphicon glyphicon-envelope" ></span> call2poma@gmail.com  <!-- adding email -->
+<span class="glyphicon glyphicon-earphone social-icons " ></span> +380638270280
+</div>	<!-- end of col-9 -->
+</div> <!-- end of row -->
+</div>  <!-- end of container -->
+</div> <!-- end of container-fluid -->
+
+<!-- start of logo and navigation -->
+<div class="container" >
+<div class="row" >
+
+<div class="col-sm-5" >
+<img src="images/bookr.jpeg">	
+</div> <!-- end of col-5 -->
+
+<div class="col-sm-7 my_menu"  >
+
+<nav class="navbar navbar-default "> <!-- overridding navbar-default in mystyle.css -->
+
+<div class="navbar-header" >
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar" >
+<span class="icon-bar" ></span>	
+<span class="icon-bar" ></span>	
+<span class="icon-bar" ></span>	
+</button>	
+</div> <!-- end of navbar-header -->
+
+<div class="collapse navbar-collapse" id="mynavbar" >
+
+<ul class="nav navbar-nav pull-right" >  <!-- 'pull-right' to pull menu bar to right -->
+	<li class="active" > <a href="">Home</a> </li>
+	<li> <a href="">Insert Book</a> </li>
+	<li> <a href="">View Book</a> </li>
+	<li> <a href="">Delete Book</a> </li>
+	<li> <a href="">Update Book</a> </li>
+	<li> <a href="">About us</a> </li>
+</ul>
+</div>  <!-- end of collapse-->
+
+</nav>
+
+</div> <!-- end of col-7 -->
+
+</div><!-- end of row -->
+</div> <!-- end of container -->
+<!-- end of logo and navigation -->
+
+<!-- end od header -->
+<!-- slider area  -->
+<!-- creating slider image -->
+<div class="container-fluid" >
+<div class="row" >
+<div id="my_carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+<!-- start of slider indicator -->
+<ul class="carousel-indicators" >
+	<li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+	<li data-target="#my_carousel" data-slide-to="1" ></li>
+	<li data-target="#my_carousel" data-slide-to="2" ></li>
+	<li data-target="#my_carousel" data-slide-to="3" ></li>
+	<li></li>
+</ul>
+
+<!-- end of slider indicator -->
+
+<div class="carousel-inner" >
+
+<div class="item active" >
+<img src="images/slider.jpeg" class="img-responsive">
+</div> <!-- end of 1st slider item -->
+
+<div class="item" >
+<img src="images/slider4.jpg" class="img-responsive" >
+</div> <!-- end of 1st slider item -->
+
+<div class="item" >
+<img src="images/slider5.jpg" class="img-responsive" >
+</div> <!-- end of 1st slider item -->
+
+<div class="item" >
+<img src="images/slider6.jpg" class="img-responsive" >
+</div> <!-- end of 1st slider item -->
+
+</div> <!-- end of carousel-inner -->
+<!-- creating left n right arrows -->
+<a class="left carousel-control" href="my_carousel" data-slide="prev" > <span class="glyphicon glyphicon-chevron-left" ></span> </a>
+
+<a class="right carousel-control" href="my_carousel" data-slide="next" > <span class="glyphicon glyphicon-chevron-right" ></span> </a>
+
+</div> <!-- end of carousel -->
+</div> <!-- end of row -->
+</div> <!-- end of container-fluid  -->
+<!-- end of slider area -->
+
+<!-- content area -->
+<div class="container" >
+<div class="row" >
+<div class="col-sm-7" >
+<h1>Welcome to Book Record Management Application</h1>
+<p>
+	An application is a container for all the resources that are required to create a solution.ou use applications to group all the resources that are required to deliver an integration solution, enabling easier development and management. If you are developing resources for multiple integration solutions in the IBM Integration Toolkit, then consider grouping your resources into applications. The use of a library helps organization by grouping reusable resources together. This library can also be used by other applications, services, libraries, or integration projects.Applications typically contain message flows. If the message flow requires only one or two additional resources, such as one schema file and one ESQL file, consider storing all resources at the application level. But when you start to require multiple resources for your solution, or resources that might be shared with other solutions, consider putting the resources that your message flow requires into a library. That library can then be referenced by the application.
+</p>
+<p>
+Applications provide runtime isolation whereby resources inside the application are not visible to other resources, such as message flows, libraries, or other applications that are running outside the application. Consider using applications if you need to ensure that updates to one group of deployed resources do not affect another group. For example, use an application when you want to control which flows pick up the latest version of an ESQL module. For examples of how to use applications to achieve runtime isolation, see Runtime isolation and resource sharing with applications and libraries.
+Libraries
+A library is a logical grouping of related code, data, or both. A library typically contains reusable helper routines and resources such as subflows, ESQL modules, message definitions, maps, and Java utilities. A library is useful to group together resources of the same type or function, for reuse or ease of management. Libraries are optional.
+Consider using libraries for the following functions:
+</p>
+
+</div> <!-- end of col-7 -->
+
+<div class="col-sm-5" >
+<img src="images/prog.jpg" class="img-responsive languages">
+
+</div> <!-- end of col-5 -->
+</div>  <!-- end of row -->
+</div> <!-- end of container -->
+<!-- end of content area -->
+
+<!-- Languages area -->
+
+<div class="container-fluid developer" >
+<div class="container" >
+<h2 class="text-center" >Some Papuler Languages</h2>
+<div class="row" >
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/js.jpeg" class="img-responsive">
+</div>
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/c++.png" class="img-responsive">	
+</div>
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/php.png" class="img-responsive">	
+</div>
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/python.jpeg" class="img-responsive">	
+</div>
+
+</div>  <!-- end of row1 -->
+
+<div class="row" >
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/html.png" class="img-responsive">
+</div>
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/objectiveC.jpeg" class="img-responsive">
+</div>
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/java.jpeg" class="img-responsive">
+</div>
+
+<div class="col-sm-3 col-xs-6" >
+<img src="images/lang/ruby.jpeg" class="img-responsive">
+</div>
+
+</div>  <!-- end of row2 -->
+
+</div> <!-- end of container -->
+	
+</div> <!-- end of container-fluid -->
+<!-- end of Papuler Languages area-->
+
+<!-- Team Area -->
+<div class="container" >
+<h2 class="text-center" >Our Team</h2>	
+
+<div class="col-sm-4 col-xs-6" >
+<div class="thumbnail" >
+<img src="images/Adeel/ad1.jpg" class="img-responsive img-circle">
+<div class="caption" >
+	<h3 class="text-center">Mian Adeel</h3>
+	<h4 class="text-center" >General Manager(walmart)</h4>
+	<p>
+		Walmart managers help operate a multi-million-dollar business. Every day brings a new opportunity to learn and grow while leading a team of dedicated associates. With the skills and knowledge you gain, you’ll have the opportunity to take your career to the next level. And the next level. And the next. How far will you go...
+	</p>
+	<a href="#" class="btn btn-primary">Contact Mian</a> 
+	<a href="#" class="btn btn-primary">Send Email</a>
+</div> <!-- end of caption -->
+</div> <!-- end of thumbnail -->	
+</div>
+
+<div class="col-sm-4 col-xs-6" >
+<div class="thumbnail" >
+<img src="images/Adeel/ad4.jpg" class="img-responsive img-rounded">
+<div class="caption" >
+	<h3 class="text-center">Mian Adeel</h3>
+	<h4 class="text-center" >General Manager(walmart)</h4>
+	<p>
+		Walmart managers help operate a multi-million-dollar business. Every day brings a new opportunity to learn and grow while leading a team of dedicated associates. With the skills and knowledge you gain, you’ll have the opportunity to take your career to the next level. And the next level. And the next. How far will you go...
+	</p>
+	<a href="#" class="btn btn-primary">Contact Mian</a> 
+	<a href="#" class="btn btn-primary">Send Email</a>
+</div> <!-- end of caption -->
+</div>
+</div>
+
+<div class="col-sm-4 col-xs-6" >
+<div class="thumbnail" >
+<img src="images/Adeel/ad3.jpg" class="img-responsive img-circle">
+<div class="caption" >
+	<h3 class="text-center">Mian Adeel</h3>
+	<h4 class="text-center" >General Manager(walmart)</h4>
+	<p>
+		Walmart managers help operate a multi-million-dollar business. Every day brings a new opportunity to learn and grow while leading a team of dedicated associates. With the skills and knowledge you gain, you’ll have the opportunity to take your career to the next level. And the next level. And the next. How far will you go...
+	</p>
+	<a href="#" class="btn btn-primary">Contact Mian</a> 
+	<a href="#" class="btn btn-primary">Send Email</a>
+</div> <!-- end of caption -->
+</div>
+</div>
+
+</div> <!-- end of container -->
+
+<!-- end of Team area -->
+<!-- Starting footer part -->
+<div class="container-fluid footer" >
+<div class="container" >
+
+<div class="col-sm-4" >
+	<img src="images/bookr.jpeg" class="img-responsive">
+	<p>
+		An application is a container for all the resources that are required to create a solution.ou use applications to group all the resources that are required to deliver an integration solution, enabling easier development and management.
+	</p>
+	<a href="#" class="btn btn-primary">Read More</a>
+</div> <!-- end of col-4 -->
+
+<div class="col-sm-4" >
+<h3>Quick Links</h3>
+<ul>
+	<li> <a href="#"> &raquo;  Home </a> </li>
+	<li> <a href="#"> &raquo;  View Books </a> </li>
+	<li> <a href="#"> &raquo;  Insert Books </a> </li>
+	<li> <a href="#"> &raquo;  Delete Book Record </a> </li>
+	<li> <a href="#"> &raquo;  Update Book Record </a> </li>
+	<li> <a href="#"> &raquo;  About Us</a> </li>
+</ul>
+	
+</div> <!-- end of col-4 -->
+
+<div class="col-sm-4" >
+	<h3>Contact Us</h3>
+	<p><strong>Address: </strong>Kiev Ukraine</p>
+	<p><strong>Email: </strong>call2poma@gmail.com</p>
+	<p><strong>Tel: </strong>+380638279280</p>
+</div> <!-- end of col-4 -->
+
+</div> <!-- end of container -->
+</div> <!-- end of container-fluid -->
+
+<!-- footer part -->
+
+<script type="text/javascript" src=js/jquery.js></script>
+<script type="text/javascript" src=js/bootstrap.js></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+</script>
+
+
+<!-- end of footer part -->
+</body>
+</html>
